@@ -1,0 +1,6 @@
+services:
+  pushme-md:
+    build: .
+    container_name: pushme-md
+    environment:
+      - PORt=${PORT}
