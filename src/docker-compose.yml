@@ -7,3 +7,4 @@ services:
       - CACHE_CLEAR_INTERVAL=${PORT}
       - CACHE_MAX_AGE=${CACHE_MAX_AGE}
     volumes: 
+      - ./renderCache:./renderCache
