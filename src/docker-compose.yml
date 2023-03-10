@@ -3,4 +3,7 @@ services:
     build: .
     container_name: pushme-md
     environment:
-      - PORt=${PORT}
+      - PORT=${PORT}
+      - CACHE_CLEAR_INTERVAL=${PORT}
+      - CACHE_MAX_AGE=${CACHE_MAX_AGE}
+    volumes: 
