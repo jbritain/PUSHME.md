@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+        <link href="https://unpkg.com/@primer/css@^20.2.4/dist/primer.css" rel="stylesheet" />
+    </head>
+    <body>
+            <button style="transform: scale(2)" id="theButton" class="btn btn-{{buttonStyle}}">{{buttonText}}</button>
+        <script>
+            let button = document.querySelector("#theButton")
+
+            let width = button.offsetWidth;
+            let height = button.offsetHeight
+
+            button.style.marginTop = height / 2;
+            button.style.marginLeft = width / 2;
+
+            document.body.style.width = width * 2;
+            document.body.style.height = height * 2;
+            document.body.style.background = 'transparent';
+        </script>
+    </body>
+</html>
